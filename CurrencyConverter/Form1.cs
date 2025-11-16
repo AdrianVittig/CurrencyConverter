@@ -15,8 +15,8 @@ namespace CurrencyConverter
     public partial class Form1 : Form
     {
         // Fields for currency data and converter
-        private readonly CurrencyData currencyData;
-        private readonly CurrencyConverter currencyConverter;
+        private CurrencyData currencyData;
+        private CurrencyConverter currencyConverter;
         public Form1()
         {
             InitializeComponent();
