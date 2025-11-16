@@ -39,6 +39,11 @@ namespace CurrencyConverter
             try
             {
                 decimal amount = decimal.Parse(txtAmount.Text);
+                if(amount < 0)
+                {
+                    MessageBox.Show("Please enter a non-negative amount.", "Input Error");
+                    return;
+                }
                 Currency fromCurr = (Currency)cmbFrom.SelectedItem;
                 Currency toCurr = (Currency)cmbTo.SelectedItem;
                 decimal convertedAmount = currencyConverter.Convert(amount, fromCurr, toCurr);

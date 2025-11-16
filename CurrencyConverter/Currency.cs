@@ -9,9 +9,9 @@ namespace CurrencyConverter
     // Class representing a currency with its code, name, and exchange rate to USD
     internal class Currency
     {
-        public string Code { get; }
-        public string Name { get; }
-        public decimal RateToUSD { get; }
+        public string Code { get; set; }
+        public string Name { get; set;  }
+        public decimal RateToUSD { get; set; }
 
         // Constructor to initialize currency properties
         public Currency(string code, string name, decimal rateToUSD)
